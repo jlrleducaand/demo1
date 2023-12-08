@@ -139,7 +139,7 @@ public class PartidoDAOImpl extends AbstractDAOImpl implements PartidoDAO {
         try {
             conn = connectDB();
 
-            ps = conn.prepareStatement("UPDATE socio SET fecha = ?, equipo1 = ?, puntosEquipo1 = ?, equipo2 = ?, puntosEquipo2 = ?, tipo_partido = ?  WHERE id = ?");
+            ps = conn.prepareStatement("UPDATE partido SET fecha = ?, equipo1 = ?, puntos_equipo1 = ?, equipo2 = ?, puntos_equipo2 = ?, tipo_partido = ?  WHERE id = ?");
 
             int idx = 1;
 
@@ -155,7 +155,7 @@ public class PartidoDAOImpl extends AbstractDAOImpl implements PartidoDAO {
             int rows = ps.executeUpdate();
 
             if (rows == 0)
-                System.out.println("Update de socio con 0 registros actualizados.");
+                System.out.println("Update de Partido con 0 registros actualizados.");
 
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();

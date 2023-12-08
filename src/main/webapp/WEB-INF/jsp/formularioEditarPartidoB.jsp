@@ -29,27 +29,27 @@
         </div>
         <div class="row body mt-2 ">
             <div class="col-md-6 align-self-center">Fecha</div>
-            <div class="col-md-6 align-self-center"><input type="date" name="fecha" value="<%=request.getParameter("fecha")%>" /></div>
+            <div class="col-md-6 align-self-center"><input type="date" name="fecha" value="<%=POpt1.get().getFecha()%>" /></div>
         </div>
         <div class="row body mt-2">
             <div class="col-md-6 align-self-center">Equipo1</div>
-            <div class="col-md-6 align-self-center"><input type="text" name="equipo1" value="<%=request.getParameter("equipo1")%>" ></div>
+            <div class="col-md-6 align-self-center"><input type="text" name="equipo1" value="<%=POpt1.get().getEquipo1()%>" ></div>
         </div>
         <div class="row body mt-2">
             <div class="col-md-6 align-self-center">Ptos-Eqp1</div>
-            <div class="col-md-6 align-self-center"><input type="text" name="puntos_equipo1" value="<%=request.getParameter("puntos_equipo1")%>" /></div>
+            <div class="col-md-6 align-self-center"><input type="number" name="puntos_equipo1" value="<%=POpt1.get().getPuntosEquipo1()%>" /></div>
         </div>
         <div class="row body mt-2">
             <div class="col-md-6 align-self-center">Equipo2</div>
-            <div class="col-md-6 align-self-center"><input type="text" name="equipo2" value="<%=request.getParameter("equipo2")%>"   /></div>
+            <div class="col-md-6 align-self-center"><input type="text" name="equipo2" value="<%=POpt1.get().getEquipo2()%>"   /></div>
         </div>
         <div class="row body mt-2">
             <div class="col-md-6 align-self-center">Ptos-Eqp2</div>
-            <div class="col-md-6 align-self-center"><input type="text" name="puntosEquipo2" value="<%=request.getParameter("puntos_equipo2")%>" /></div>
+            <div class="col-md-6 align-self-center"><input type="number" name="puntos_equipo2" value="<%=POpt1.get().getPuntosEquipo2()%>" /></div>
         </div>
         <div class="row body mt-2">
             <div class="col-md-6 align-self-center">Tipo</div>
-            <div class="col-md-6 align-self-center"><select class="col-md-4 "  type="text" name="tipo_partido value="<%=request.getParameter("tipo_partido")%>"">
+            <div class="col-md-6 align-self-center"><select class="col-md-4 "  type="text" name="tipo_partido" value="<%=POpt1.get().getTipoPartido()%>"">
                 <option  value= "Oficial">Oficial</option>
                 <option  value="Amistoso">Amistoso</option>
             </select></div>

@@ -100,7 +100,7 @@ public class UtilServlet {
 
         //CÓDIGO DE VALIDACIÓN
         boolean valida = true;
-        //int socioID = -1;
+        int socioID = Integer.parseInt(request.getParameter("codigo"));
 
         Date fecha = null;
         String equipo1 = null;
@@ -136,7 +136,7 @@ public class UtilServlet {
             tipo_partido = request.getParameter("tipo_partido");
 
 
-            return Optional.of(new Partido(-1, fecha, equipo1, puntos_equipo1, equipo2, puntos_equipo2,  tipo_partido));
+            return Optional.of(new Partido(socioID, fecha, equipo1, puntos_equipo1, equipo2, puntos_equipo2,  tipo_partido));
 
         } catch (Exception ex) {
             ex.printStackTrace();

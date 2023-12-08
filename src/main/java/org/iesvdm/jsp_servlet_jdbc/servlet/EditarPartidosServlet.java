@@ -41,7 +41,7 @@ public class EditarPartidosServlet extends HttpServlet  {
 
         RequestDispatcher dispatcher = null;
 
-        Optional<Partido> optionalPartido = UtilServlet.validaGrabar(request);
+        Optional<Partido> optionalPartido = UtilServlet.validaEditarPost(request);
         //SI OPTIONAL CON SOCIO PRESENTE <--> VALIDA OK
         if (optionalPartido.isPresent() ) {
 
@@ -60,6 +60,7 @@ public class EditarPartidosServlet extends HttpServlet  {
             //PARA LANZAR UN MODAL Y UN EFECTO SCROLL EN LA VISTA JSP
             request.setAttribute("newSocioID", partido.getId());
 
+            //Redireccioname a:
             dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/listadoPartidosB.jsp");
 
         } else {

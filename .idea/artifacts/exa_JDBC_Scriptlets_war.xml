@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="exa_JDBC_Scriptlets:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/exa_JDBC_Scriptlets_war</output-path>
+    <root id="archive" name="exa_JDBC_Scriptlets_war.war">
+      <element id="artifact" artifact-name="exa_JDBC_Scriptlets:war exploded" />
+    </root>
+  </artifact>
+</component>
